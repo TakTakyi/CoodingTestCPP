@@ -8,8 +8,8 @@ vector<int> solution(vector<vector<int>> score) {
     vector<int> answer;
     vector<int> m_AVG;
     
-    //성적의 평균값 구하기
-    //평균값을 m_AVG에 삽입
+    //성적을 합산한다
+    //성적총값을 m_AVG에 삽입
     for (int ii = 0; ii < score.size(); ii++)
     {
         int avg = (score[ii][0] + score[ii][1]);
