@@ -15,12 +15,17 @@ bool compare(int a, int b)
     int num2 = abs(temp - b);
     
     // 만약 두 수가 같다면 내림차순
+    // n이 4일 경우 5,3이면 num1,2가 같음
+    // 값이 같을 경우 내림차순
     if (num1 == num2)
     {
         return a > b;
     }
     
     // n과 가까운 순서대로 정렬
+    // n이 30일 경우 num1 = 6 , num2 = 10
+    // 값을 비교했을때 값이 더작은값이 n과 가까운수
+    // 가까운수 부터 정렬
     return num1 < num2;
 }
 
