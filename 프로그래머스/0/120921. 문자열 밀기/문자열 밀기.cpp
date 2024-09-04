@@ -25,6 +25,13 @@ string stringpush(string A)
 int solution(string A, string B) {
     int answer = 0;
     
+    //문자열 밀기 함수를 만들고
+    //그 함수를 자기 자신이 나올때까지 반복
+    //문자열 B와 같으면 반복횟수를 반환
+    //아니면 -1을 반환
+    //반복을 돌리기전에 매개변수 A와B를 비교하여
+    //같으면 0을 반환
+    
     //두 매개변수의 값이 같을경우
     if (A == B)
     {
@@ -32,7 +39,7 @@ int solution(string A, string B) {
     }
     
     int ii = 0;
-    string c = A;
+    string c = A; //문자열 밀기용 문자열 변수
     while(1)
     {
         c = stringpush(c);
